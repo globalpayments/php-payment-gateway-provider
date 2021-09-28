@@ -16,4 +16,5 @@ abstract class RequestArg
     public const DESCRIPTION      = 'DESCRIPTION';
     public const AUTH_AMOUNT      = 'AUTH_AMOUNT';
     public const REQUEST_MULTI_USE_TOKEN = 'REQUEST_MULTI_USE_TOKEN';
+    public const INVOICE_NUMBER   = 'INVOICE_NUMBER';
 }

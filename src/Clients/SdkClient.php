@@ -196,6 +196,10 @@ class SdkClient implements ClientInterface
         if ($this->hasArgument(RequestArg::AUTH_AMOUNT)) {
             $this->builderArgs['authAmount'] = array($this->getArgument(RequestArg::AUTH_AMOUNT));
         }
+
+        if ($this->hasArgument(RequestArg::INVOICE_NUMBER)) {
+            $this->builderArgs['invoiceNumber'] = array($this->getArgument(RequestArg::INVOICE_NUMBER));
+        }
     }
 
     /**
