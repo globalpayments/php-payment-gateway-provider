@@ -57,6 +57,11 @@ class Order
     public $transactionType;
 
     /**
+     * @var string
+     */
+    public $invoiceNumber;
+
+    /**
      * @return Array<string,mixed>
      */
     public function asArray()
@@ -72,6 +77,7 @@ class Order
             RequestArg::REQUEST_MULTI_USE_TOKEN => $this->requestMultiUseToken,
             RequestArg::SHIPPING_ADDRESS => $this->shippingAddress,
             RequestArg::TXN_TYPE         => $this->transactionType,
+            RequestArg::INVOICE_NUMBER   => $this->invoiceNumber,
         );
     }
 }
